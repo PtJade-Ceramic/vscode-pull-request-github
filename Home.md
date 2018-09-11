@@ -22,6 +22,5 @@ Instead our intent is to have a separate extension for each Pull Request provide
 
 ### 4. Where can I see the roadmap for the extension?
 
-
-
+The roadmap for this extension is stil in the making. Next steps for us is to graduate out of public preview.
 
