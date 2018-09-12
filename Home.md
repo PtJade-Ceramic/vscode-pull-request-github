@@ -4,7 +4,7 @@ Welcome to the vscode-pull-request-github wiki!
 
 ### 1. How does authentication to GitHub work?
 
-The authentication workflow is oAuth based, where GitHub Pull Requests initially makes a request to a new Auth endpoint, which then triggers a traditional oAuth flow to GitHub. Once the OAuth flow is completed, the token is returned to VS Code, and stored in an encrypted store (KeyChain or alike) locally on your computer.
+The authentication workflow is OAuth based, where GitHub Pull Requests initially makes a request to a new Auth endpoint, which then triggers a traditional OAuth flow to GitHub. Once the OAuth flow is completed, the token is returned to VS Code, and stored in an encrypted store (KeyChain or alike) locally on your computer.
 
 See https://github.com/Microsoft/vscode-pull-request-github/issues/93 for details
 
