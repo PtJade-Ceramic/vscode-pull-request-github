@@ -24,5 +24,5 @@ GitLab support, https://github.com/Microsoft/vscode-pull-request-github/issues/3
 
 ### 4. Where can I see the roadmap for the extension?
 
-The roadmap for this extension is stil in the making. Next steps for us is to graduate out of public preview.
+The roadmap for this extension is still in the making. Next steps for us is to graduate out of public preview.
 
