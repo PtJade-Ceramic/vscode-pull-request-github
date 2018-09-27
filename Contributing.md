@@ -24,7 +24,9 @@ This extension uses a handful of VSCode APIs, some of which are still being deve
 - `github`: Code that directly makes requests to GitHub
 - `view`: The classes that contribute the tree views of the extension, and the `reviewManager` class which orchestrates switching into and out of "Review Mode"
  The `preview-src` folder contains all of the code for the "Description" webview, the content shown when clicking on any of the "Description" nodes in the tree.
+
  The entry point of the extension is `extension.ts`.
+
  The VSCode APIs the extension uses to create or display UI are:
 - `registerTreeDataProvider`: Creates the "GitHub Pull Requests" tree view and "Changes in Pull Request" tree view
 - `createWebviewPanel`: Creates the "Description" page shown for each pull request
