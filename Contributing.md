@@ -1,5 +1,6 @@
 # Contributing
  Thank you for your interest in contributing to this extension! This project welcomes contributions and suggestions.
+
  Aftering cloning and building, check out the [issues list](https://github.com/Microsoft/vscode-pull-request-github/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc). Issues labeled [good first issue](https://github.com/Microsoft/vscode-pull-request-github/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22) are great candidates to work on. If you're new to writing extensions for VSCode, reading through some of the [documentation](https://code.visualstudio.com/docs/extensions/overview) on extensions is helpful.
  ## Build and Run
  ### Prerequisites
@@ -38,8 +39,11 @@ This extension uses a handful of VSCode APIs, some of which are still being deve
 - `registerWorkspaceCommentsProvider`: Displays the comments panel and handles navigation to files when selecting comments
  ## Pull Requests
 Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit cla.microsoft.com.
+
  When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
+
  Before creating a pull request, if the issues involves making changes to the UI, please discuss it in the issue beforehand. This will help keep reviews focused on the code changes.
+
  ## Code of Conduct
 This project has adopted the Microsoft Open Source Code of Conduct. Be considerate to others and try to be courteous and professional at all times. For more information see the Code of Conduct FAQ or contact opencode@microsoft.com with any additional questions or comments.
  
