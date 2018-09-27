@@ -1,7 +1,6 @@
-# Contributing
- Thank you for your interest in contributing to this extension! This project welcomes contributions and suggestions.
+Thank you for your interest in contributing to this extension! This project welcomes contributions and suggestions.
 
- Aftering cloning and building, check out the [issues list](https://github.com/Microsoft/vscode-pull-request-github/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc). Issues labeled [good first issue](https://github.com/Microsoft/vscode-pull-request-github/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22) are great candidates to work on. If you're new to writing extensions for VSCode, reading through some of the [documentation](https://code.visualstudio.com/docs/extensions/overview) on extensions is helpful.
+After cloning and building, check out the [issues list](https://github.com/Microsoft/vscode-pull-request-github/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc). Issues labeled [good first issue](https://github.com/Microsoft/vscode-pull-request-github/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22) are great candidates to work on. If you're new to writing extensions for VSCode, reading through some of the [documentation](https://code.visualstudio.com/docs/extensions/overview) on extensions is helpful.
  ## Build and Run
  ### Prerequisites
  - [Git](https://git-scm.com)
