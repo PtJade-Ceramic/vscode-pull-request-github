@@ -10,9 +10,53 @@ See https://github.com/Microsoft/vscode-pull-request-github/issues/93 for detail
 
 ### 2. Is GitHub Enterprise supported?
 
-GitHub Enterprise isn't fully supported currently. We are tracking a few outstanding issues, and we are awaiting an update to be released for GitHub Enterprise instances
+Yes! There are two ways of authenticating to GitHub Enterprise, depending on which version your organization is running.
 
-Follow this query to see where we are, https://github.com/Microsoft/vscode-pull-request-github/issues?utf8=%E2%9C%93&q=label%3AGitHubEnterprise+
+#### Integrated sign in
+
+If your GitHub Enterprise is one of the following versions, you can authenticate in the same way as you would on GitHub, by clicking on the Sign In button when the dialog asking you to sign in shows up on the bottom right corner.
+
+- 2.14.5 and above
+- 2.13.11 and higher 2.13.x
+- 2.12.19 and higher 2.12.x
+- 2.11.25
+
+#### I get a 404 when trying to sign in!
+
+That means your server doesn't supported integrated sign in. See below for an alternate way of authenticating.
+
+#### Personal Access Token authentication
+
+If your GitHub Enterprise does not support integrated sign in, or if the integrated sign in process fails, you can create a personal access token to use as your password.
+
+1. Go to https://github.com/settings/tokens
+2. Generate a token with the the following scopes: `repo`, `read:user` and `user:email` (see [this guide](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) on how to create a PAT for more details).
+3. Open your user settings file in VSCode, and add the following entry:
+
+```
+"github.hosts": [
+  {
+    "host": "https://your.host.here",
+    "username": "your username",
+    "token": "your token"
+  }
+]
+```
+
+#### I did all that but I still can't login to my GitHub Enterprise instance!
+
+If your GitHub Enterprise is running with a self-signed certificate, VSCode will not be able to make requests to it, for security purposes, because the OS doesn't trust your server. You can check whether this is the case by browsing to your server and checking the certificate information shown in the lock icon.
+
+In order to connect to a server like this, you'll need to import the certificate into your machine and trust it. You can export the certificate from your browser by clicking on the lock icon (in chrome, for example), clicking on `Certificate`, `Details`, `Open File`, and exporting the certificate as PKCS #7 (.p7b extension), including all the certificates in the path:
+
+![image](https://user-images.githubusercontent.com/310137/46096931-c9e66000-c1c0-11e8-84bc-d32a05289fa8.png)
+
+You can then double click on the exported file and import it into your user trust store 
+
+![image](https://user-images.githubusercontent.com/310137/46097068-26e21600-c1c1-11e8-8b38-2df6a4d71a18.png)
+
+Restart vscode, and you'll be able to connect to your server. 
+
 
 ### 3. What about supporting other providers such as Gitlab and Bitbucket?
 
