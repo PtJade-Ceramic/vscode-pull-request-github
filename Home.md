@@ -30,7 +30,7 @@ That means your server doesn't supported integrated sign in. See below for an al
 If your GitHub Enterprise does not support integrated sign in, or if the integrated sign in process fails, you can create a personal access token to use as your password.
 
 1. Go to https://github.com/settings/tokens
-2. Generate a token with the the following scopes: `repo`, `read:user` and `user:email` (see [this guide](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) on how to create a PAT for more details).
+2. Generate a token with the the following scopes: `repo`, `read:user`, `user:email`, and `write:discussion` (see [this guide](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) on how to create a PAT for more details). Note that `write:discussion` doesn't exist on older versions of GitHub Enterprise and will be treated as optional for those, but is required for newer versions.
 3. Open your user settings file in VSCode, and add the following entry:
 
 ```
