@@ -82,3 +82,17 @@ The last step is setting triggers for the pipeline. The one we use for GH PR nig
 
 <img width="1433" alt="image" src="https://user-images.githubusercontent.com/876920/50457090-e2742c80-090d-11e9-977e-9ea9c76f1e61.png">
 
+## Manual Publish
+
+In addition to scheduled build/publish, we can trigger a build manually whenever we want. The only thing to note here is still **VERSION**, which should not break the algorithm of automatic Nightly Build.
+
+For example, the version for GH PR nightly build is defined as
+
+* Major: Year - 2018
+* Minor: Date of the Year
+* Patch: 0 if it's automatic nightly build
+
+If the version of nightly build for today is `0.320.0`, then we know for sure tomorrow's version will be `0.321.0`. When we do a manual publish, we should pass in the **VERSION** as `0.320.1`, which is less than `0.321.0` and greater than `0.320.0`.
+
+<img width="1433" alt="image" src="https://user-images.githubusercontent.com/876920/50457148-59112a00-090e-11e9-9424-8f7585981f9f.png">
+
