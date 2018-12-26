@@ -22,7 +22,7 @@ VS Code extensions are Nodejs applications so we can choose the Nodejs template 
 
 Once we create a build pipeline, the next step is setting up customized tasks, here is an overall look of GH PR nightly build's pipeline
 
-<img width="1458" alt="image" src="https://user-images.githubusercontent.com/876920/50456120-33345700-0907-11e9-87c9-da069fa6ede7.png">
+![image](https://user-images.githubusercontent.com/876920/50457367-ca9da800-090f-11e9-997e-e717041ca71a.png)
 
 For every task, we need to specific a task runner. We used three different task runners in our pipeline
 
@@ -64,7 +64,8 @@ The algorithm for generating a version number which meets #1 and #2 can be [simp
 node ./ci.js -v "$VERSION" -i "$NAME" -n "$DISPLAYNAME" -d "$DESCRIPTION" -p "$PUBLISHER"
 ```
 
-<img width="1433" alt="image" src="https://user-images.githubusercontent.com/876920/50456884-734a0880-090c-11e9-919d-9940d49483a7.png">
+![image](https://user-images.githubusercontent.com/876920/50457367-ca9da800-090f-11e9-997e-e717041ca71a.png)
+
 
 ### Publish
 
