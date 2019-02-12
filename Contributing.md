@@ -33,9 +33,9 @@ This extension uses a handful of VSCode APIs, some of which are still being deve
 - `createWebviewPanel`: Creates the "Description" page shown for each pull request
 - `registerTextDocumentContentProvider`: Returns file contents when clicking on file changes within the tree view
 - `registerDecorationProvider`: Adds the '◆' indicators to the explorer and contributed tree view that indicate a file has been commented on
-- `reigsterStatusBaritem`: Adds the "Signed in" status bar item
-- `registerDocumentCommentsProvider`: Displays ranges you can comment on within the editor and handles adding comments
-- `registerWorkspaceCommentsProvider`: Displays the comments panel and handles navigation to files when selecting comments
+- `registerStatusBaritem`: Adds the "Signed in" status bar item
+- `registerDocumentCommentProvider`: Displays ranges you can comment on within the editor and handles adding comments
+- `registerWorkspaceCommentProvider`: Displays the comments panel and handles navigation to files when selecting comments
  ## Pull Requests
 Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit cla.microsoft.com.
 
