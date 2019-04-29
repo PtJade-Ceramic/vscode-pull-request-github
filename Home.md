@@ -14,12 +14,7 @@ Yes! There are two ways of authenticating to GitHub Enterprise, depending on whi
 
 #### Integrated sign in
 
-If your GitHub Enterprise is one of the following versions, you can authenticate in the same way as you would on GitHub, by clicking on the Sign In button when the dialog asking you to sign in shows up on the bottom right corner.
-
-- 2.14.5 and above
-- 2.13.11 and higher 2.13.x
-- 2.12.19 and higher 2.12.x
-- 2.11.25
+If your GitHub Enterprise is version `2.14.5` and above, you can authenticate in the same way as you would on GitHub, by clicking on the Sign In button when the dialog asking you to sign in shows up on the bottom right corner.
 
 #### I get a 404 when trying to sign in!
 
