@@ -48,24 +48,13 @@ As mentioned at the very beginning, the nightly build will be a new extension, s
 * Extension ID
 * Version
 
-Updating the extension id is easy, for example, we change `vscode-pull-request-github` to `vscode-pull-request-github-insiders`. While updating the version is a bit more complex but the rules are straightforward
+Updating the extension id is easy, for example, we change `vscode-pull-request-github` to `vscode-pull-request-github-insiders`. While updating the version is a bit more complex but still straightforward
 
 1. Every nightly build has an unique version
 2. The version only increments
 3. We are still able to publish manually
 
-The algorithm for generating a version number which meets #1 and #2 can be [simple and stupid](https://github.com/Microsoft/vscode-pull-request-github/blob/master/ci.js#L9-L16) but to support #3, we can add an Environment Variable `VERSION` and pass that to our script through `args`.
-
-<img width="1433" alt="image" src="https://user-images.githubusercontent.com/876920/50456788-c1aad780-090b-11e9-9700-17d10d760fe8.png">
-
-*Generate Package.json* script:
-
-```shell
-node ./ci.js -v "$VERSION" -i "$NAME" -n "$DISPLAYNAME" -d "$DESCRIPTION" -p "$PUBLISHER"
-```
-
-![image](https://user-images.githubusercontent.com/876920/50457367-ca9da800-090f-11e9-997e-e717041ca71a.png)
-
+*Update*. The version will be `YEAR.MONTH.MINUTES-IN-MONTH`, so we can generate an unique version for every minute, even if we attempt to publish a new release manually, the version is still guaranteed correct.
 
 ### Publish
 
@@ -82,18 +71,3 @@ The last step is setting triggers for the pipeline. The one we use for GH PR nig
 
 
 <img width="1433" alt="image" src="https://user-images.githubusercontent.com/876920/50457090-e2742c80-090d-11e9-977e-9ea9c76f1e61.png">
-
-## Manual Publish
-
-In addition to scheduled build/publish, we can trigger a build manually whenever we want. The only thing to note here is still **VERSION**, which should not break the algorithm of automatic Nightly Build.
-
-For example, the version for GH PR nightly build is defined as
-
-* Major: Year - 2018
-* Minor: Date of the Year
-* Patch: 0 if it's automatic nightly build
-
-If the version of nightly build for today is `0.320.0`, then we know for sure tomorrow's version will be `0.321.0`. When we do a manual publish, we should pass in the **VERSION** as `0.320.1`, which is less than `0.321.0` and greater than `0.320.0`.
-
-<img width="1433" alt="image" src="https://user-images.githubusercontent.com/876920/50457148-59112a00-090e-11e9-9424-8f7585981f9f.png">
-
