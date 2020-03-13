@@ -60,6 +60,8 @@ Updating the extension id is easy, for example, we change `vscode-pull-request-g
 
 To publish through command line, we need to pass in [Personal Access Token](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token) through Environment Variable again. Apparently we don't want to put the PAT in source code.
 
+The current token has a lifetime of a year, and will expire on 3/11/2021. When this happens, generate a new token using [these instructions](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token). From the pipeline's page, click edit, variables, and then update the value of `vsce.token` to the new string.
+
 ## Trigger/Schedule
 
 Once we have the build pipeline setup, we can save the configuration in a yml file and push that to our repository (xterm [example](https://github.com/xtermjs/xterm.js/blob/master/azure-pipelines.yml)), but you don't necessarily need to if you have some customized scripts you don't want to expose.
@@ -71,3 +73,7 @@ The last step is setting triggers for the pipeline. The one we use for GH PR nig
 
 
 <img width="1433" alt="image" src="https://user-images.githubusercontent.com/876920/50457090-e2742c80-090d-11e9-977e-9ea9c76f1e61.png">
+
+## PAT expiration
+
+To publish the extension, the pipeline takes a vsce access token as a variable. 
