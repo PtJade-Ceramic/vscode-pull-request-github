@@ -10,7 +10,9 @@ See https://github.com/Microsoft/vscode-pull-request-github/issues/93 for detail
 
 ### 2. Is GitHub Enterprise supported?
 
-Yes! There are two ways of authenticating to GitHub Enterprise, depending on which version your organization is running.
+As of version 0.16.0 of the extension, we are discontinuing support for GitHub Enterprise. At the beginning of this project, we had resources to test against Enterprise, but we have now been without that for quite some time. Thank you to all of the community members that have helped fill these gaps. As we continue to add features to the extension, it's become increasingly difficult to maintain Enterprise support. This iteration we moved to a new method of authentication built into VSCode in an effort to unify authentication and account management, and this API currently doesn't support Enterprise accounts.
+
+If you would still like to use the extension, you can use the "Install Another Version" option from the extensions viewlet to download version 0.15.0: https://github.com/Microsoft/vscode/issues/12764#issuecomment-442370545
 
 #### Integrated sign in
 
