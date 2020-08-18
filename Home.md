@@ -24,11 +24,11 @@ That means your server doesn't supported integrated sign in. See below for an al
 
 #### Personal Access Token authentication
 
-If your GitHub Enterprise does not support integrated sign in, or if the integrated sign in process fails, you can create a personal access token to use as your password.
+If the integrated sign in process fails, you can create a personal access token to use as your password.
 
 1. Go to https://github.com/settings/tokens
-2. Generate a token with the the following scopes: `repo`, `read:user`, `user:email`, and `write:discussion` (see [this guide](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) on how to create a PAT for more details). Note that `write:discussion` doesn't exist on older versions of GitHub Enterprise and will be treated as optional for those, but is required for newer versions.
-3. In VS Code, run the command (⌘⇧P by default) `GitHub Pull Requests: Manually Provide Authentication Response` and paste your token. It will prompt you for the server to use the token with—enter the hostname of your GHE server here.
+2. Generate a token with the the following scopes: `repo`, `read:user`, and `user:email` (see [this guide](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) on how to create a PAT for more details).
+3. In VS Code, start the sign in process by clicking on the "Sign in" button in the GitHub viewlet, and then use the "Signing into GitHub..." status bar item to surface an input box to enter the token.
 
 #### I did all that but I still can't login to my GitHub Enterprise instance!
 
