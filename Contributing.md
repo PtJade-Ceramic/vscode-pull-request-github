@@ -7,6 +7,7 @@ After cloning and building, check out the [issues list](https://github.com/Micro
 - [Node.JS](https://nodejs.org/en/), `>= 8.9.3, < 9.0.0`
 - [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
 - [VSCode Insiders](https://code.visualstudio.com/insiders/)
+
  If you want explore the source code of this extension yourself, it's easy to get started. Simply follow these steps:
  1. Clone the repository
 1. Run yarn
