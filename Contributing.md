@@ -4,7 +4,7 @@ After cloning and building, check out the [issues list](https://github.com/Micro
  ## Build and Run
  ### Prerequisites
  - [Git](https://git-scm.com)
-- [Node.JS](https://nodejs.org/en/), `>= 8.9.3, < 9.0.0`
+- [Node.JS](https://nodejs.org/en/), `>= 10.x`
 - [Yarn](https://yarnpkg.com/en/), follow the [installation guide](https://yarnpkg.com/en/docs/install)
 - [VSCode Insiders](https://code.visualstudio.com/insiders/)
 
