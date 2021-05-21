@@ -10,7 +10,12 @@ See https://github.com/Microsoft/vscode-pull-request-github/issues/93 for detail
 
 ### 2. Is GitHub Enterprise supported?
 
-As of version 0.16.0 of the extension, we are discontinuing support for GitHub Enterprise. At the beginning of this project, we had resources to test against Enterprise, but we have now been without that for quite some time. Thank you to all of the community members that have helped fill these gaps. As we continue to add features to the extension, it's become increasingly difficult to maintain Enterprise support. This iteration we moved to a new method of authentication built into VSCode in an effort to unify authentication and account management, and this API currently doesn't support Enterprise accounts.
+GitHub Enterprise has limited support beginning in version 0.27.0 of the extension, thanks to community member @kabel. Our team still does not have access to Enterprise instances to test with, so there are likely to still be some issues, particularly in areas around opening or generating GitHub links. We welcome any help on improving our support.
+
+VS Code version 1.57 or above is required to use this. At the time of this writing, this is the VS Code Insider's version, which can be downloaded [here](https://code.visualstudio.com/insiders/) and used side-by-side with the stable version of VS Code. The changes to the extension are only available in the [nightly](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github-insiders)
+version of the extension right now, but should be released to stable in June 2021. To use the nightly version of the extension, please make sure that the stable version of the extension is uninstalled or disabled - they will conflict when simultaneously enabled.
+
+To sign in with GitHub Enterprise, update the `github-enterprise.uri` setting in VS Code to your server URL. You can then use the Accounts icon to start the sign in flow, and you will be asked to provide a Personal Access Token. The extension uses 'read:user', 'user:email', 'repo' scopes, so create a PAT with these permissions. Steps for signing in can be found here: https://github.com/microsoft/vscode/pull/115940#issuecomment-838838680
 
 ### 3. Why isn't the extension starting?
 
