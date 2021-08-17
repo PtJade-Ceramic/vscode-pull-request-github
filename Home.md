@@ -25,6 +25,8 @@ If you're using an OSS build of Visual Studio Code (for example, the archlinux c
 
 We align our releases and milestones with the main [VS Code project](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Aiteration-plan). You can view the iteration plan there, and that will tell you approximately when the next full release will be. Patch releases are not aligned with the VS Code project and will occur as needed.
 
+If there's a change you want to have before the next release, you can always install the [nightly build](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github-insiders (and disable the stable version of the extension).
+
 ### 5. What about supporting other providers such as Gitlab and Bitbucket?
 
 To build this extension, we introduced a new proposed api for adding comments that is meant to be generic (in the release notes here: https://code.visualstudio.com/updates/v1_27#_comment-providers). This extension is meant only to add support for GitHub pull requests - trying to make it integrate with other git providers would make it bloated. 
