@@ -1,6 +1,4 @@
-To allow us early dogfood new features and bug fixes, we added a nightly build for GH PR. The nightly build is a standalone extension and published to the marketplace as [GitHub Pull Request Nightly Build](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github-insiders).
-
-Below is how we set up the nightly build CD on Azure Pipeline.
+> **The nightly build has been deprecated** in favor of the [pre-release build](https://github.com/microsoft/vscode-pull-request-github/wiki/Pre-release-Build).
 
 ## Azure Pipeline setup
 
