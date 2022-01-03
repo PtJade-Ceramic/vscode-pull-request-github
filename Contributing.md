@@ -14,6 +14,7 @@ After cloning and building, check out the [issues list](https://github.com/Micro
 1. Compile in the background
 	- Run yarn watch
 	- Or you can directly start this task by Command Palette -> Run Build Task
+
  To run and debug the extension, press F5.
  ## Tests
  The tests for the extension can be run with `yarn test`.
