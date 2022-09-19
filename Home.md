@@ -21,24 +21,9 @@ As of the time of writing, the extension has been tested with GitHub Enterprise 
 
 #### Version 0.50.0 and lower
 
-Thanks to community member @kabel, there is limited GitHub Enterprise support starting with:
+GitHub Enterprise has limited support beginning in version 0.27.0 of the extension, thanks to community member @kabel.
 
-- extension version >= 0.27.0
-- VS Code version >= 1.57
-
-To sign in with GitHub Enterprise, update the `github-enterprise.uri` setting in
-VS Code to your server URL. Use then the Accounts icon to start the sign-in
-flow, and you will be asked to provide a Personal Access Token. The following
-scopes are required:
-
-- `repo`
-- `workflow`
-- in category `user`:
-  - `read:user`
-  - `user:email`
-
-Further details for signing in can be found here:
-https://github.com/microsoft/vscode/pull/115940#issuecomment-838838680
+To sign in with GitHub Enterprise, update the `github-enterprise.uri` setting in VS Code to your server URL. You can then use the Accounts icon to start the sign in flow, and you will be asked to provide a Personal Access Token. The extension uses 'read:user', 'user:email', 'repo', and 'workflow' scopes, so create a PAT with these permissions. Steps for signing in can be found here: https://github.com/microsoft/vscode/pull/115940#issuecomment-838838680
 
 ### 3. Why isn't the extension starting?
 
