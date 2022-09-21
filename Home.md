@@ -12,12 +12,13 @@ See https://github.com/Microsoft/vscode-pull-request-github/issues/93 for detail
 
 #### Version 0.51.* and moving forward
 
-Version 0.51.* works with VS Code insiders version 1.72+ and has the beginning of improved GitHub Enterprise support:
+Version 0.51.* works with VS Code insiders version 1.72+ and has improved GitHub Enterprise support:
 
 - No PAT needed!
 - Initial testing + fixes for several GitHub Enterprise version.
+- GitHub Enterprise 3.1 and up tested.
 
-As of the time of writing, the extension has been tested with GitHub Enterprise versions 3.5.5 and 3.4.8, with further testing ongoing. If you encounter any problems, please open an issue an include the GitHub Enterprise version you're using. This is a work in progress and the extension provides many features to test so there will inevitably still be areas that need work.
+If you encounter any problems, please open an issue an include the GitHub Enterprise version you're using. This is a work in progress and the extension provides many features to test so there will inevitably still be areas that need work.
 
 #### Version 0.50.0 and lower
 
