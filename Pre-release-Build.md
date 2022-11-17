@@ -2,6 +2,7 @@ GitHub Pull Requests and Issues uses VS Code's built in pre-release extension su
 
 ## To use the pre-release build
 
+1. Usually, the pre-release build targets VS Code Insiders. You might need to use VS Code Insiders to use the latest pre-release build.
 1. Open the Extensions view.
 1. Search for GitHub Pull Requests and Issues in the Extensions view
 1. If you haven't installed the extension yet, you can jump straight to installing the pre-release extension using the drop down menu next to the install button. If you already have the extension installed, you can right-click on the extension and "Switch to pre-release".
